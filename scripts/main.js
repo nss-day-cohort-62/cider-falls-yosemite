@@ -1,4 +1,5 @@
 import { areasHTML } from "./areas.js";
+import { services } from 'activities.js'
 
 const mainContainer = document.querySelector("#container")
 
@@ -7,5 +8,5 @@ const mainContainer = document.querySelector("#container")
 
 
 
-mainContainer.innerHTML = areasHTML()
+mainContainer.innerHTML = services()
 

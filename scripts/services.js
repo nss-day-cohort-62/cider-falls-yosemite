@@ -1,4 +1,4 @@
-import { getActivities } from "./database";
+import { getActivities } from "./database.js";
 
 const activities = getActivities()
 

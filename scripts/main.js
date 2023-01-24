@@ -1,4 +1,5 @@
 import { areasHTML } from "./areas.js";
+import { guestsHTML } from "./guests.js"
 
 
 

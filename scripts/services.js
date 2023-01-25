@@ -7,23 +7,23 @@ const areas = getAreas()
 const filteredAreaActivity = (activity) => {
     let matchingActivities = []
     for (const areaActivity of areaActivities) {
-        if (areaActivity.activityId === activity.id){
+        if (areaActivity.activityId === activity.id) {
             matchingActivities.push(areaActivity)
         }
-        
+
     }
     return matchingActivities
 }
 
 const areaStringCreator = (matchedArray) => {
     let string = ''
-    for (const match of matchedArray){
+    for (const match of matchedArray) {
 
-        for (const area of areas){
-            if (area.id === match.areaId){
+        for (const area of areas) {
+            if (area.id === match.areaId) {
                 string += `${area.name}, `
             }
-    }
+        }
     }
     return string
 }
@@ -33,17 +33,17 @@ document.addEventListener(
     (clickEvent) => {
         const itemClicked = clickEvent.target
         if (itemClicked.id.startsWith('activity')) {
-            const [,activityId] = itemClicked.id.split("--")
-        let matchingActivity = null
-        let stringVariable = ''
+            const [, activityId] = itemClicked.id.split("--")
+            let matchingActivity = null
+            let stringVariable = ''
             for (const activity of activities) {
-                if (activity.id === parseInt(activityId)){
-                matchingActivity = activity
-            const matchedAreaIds = filteredAreaActivity(matchingActivity)
-            stringVariable += areaStringCreator(matchedAreaIds)
-            window.alert(`${matchingActivity.name} is available at ${stringVariable}`)
-        }
-    }     
+                if (activity.id === parseInt(activityId)) {
+                    matchingActivity = activity
+                    const matchedAreaIds = filteredAreaActivity(matchingActivity)
+                    stringVariable += areaStringCreator(matchedAreaIds)
+                    window.alert(`${matchingActivity.name} is available at ${stringVariable}`)
+                }
+            }
         }
     }
 )
@@ -52,7 +52,7 @@ const activities = getActivities()
 
 export const services = () => {
     let assignmentHTML = '<ul id="activities">'
-    
+
 
     for (const activity of activities) {
         assignmentHTML += `<li id="activity--${activity.id}">${activity.name}</li>`

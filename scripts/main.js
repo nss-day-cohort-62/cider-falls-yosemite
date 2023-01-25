@@ -1,7 +1,7 @@
 import { areasHTML } from "./areas.js";
 
 import { guestsHTML } from "./guests.js"
-import { services } from "./services.js"
+import { services } from "./services.js";
 
 
 const mainContainer = document.querySelector("#container")
@@ -13,9 +13,9 @@ const mainContainer = document.querySelector("#container")
 
 
 
-mainContainer.innerHTML = `<h1>Services:</h1>\n
+mainContainer.innerHTML = `<div id="servicesID"><h1>Services:</h1>\n
 <section>${services()}</section>\n
-
+</div>
 <div id="grandparent">
 <div id="areas-section">
     <h1>Areas:</h1>

@@ -124,6 +124,7 @@ const database = {
     ]
 }
 
+
  export const getAreas = () => {
     return database.areas.map(area => ({...area}))
  } 

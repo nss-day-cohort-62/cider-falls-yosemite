@@ -1,7 +1,7 @@
 import { areasHTML } from "./areas.js";
 
 import { guestsHTML } from "./guests.js"
-
+import { services } from "./services.js";
 
 
 const mainContainer = document.querySelector("#container")
@@ -11,7 +11,6 @@ const mainContainer = document.querySelector("#container")
 
 
 
-mainContainer.innerHTML = areasHTML()
 
 
 mainContainer.innerHTML = `<h1>Services:</h1>\n

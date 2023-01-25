@@ -133,7 +133,7 @@ const database = {
     return database.activities.map(activity => ({...activity}))
  }
  export const getAreaActivities = () => {
-    return database.areaActivities.map(areaActivity => ({...areaActivity}))
+    return database.areaActivity.map(areaActivity => ({...areaActivity}))
  }
 
 export const getGuests = () => {

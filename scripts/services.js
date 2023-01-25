@@ -3,7 +3,7 @@ import { getActivities } from "./database.js";
 const activities = getActivities()
 
 export const services = () => {
-    let assignmentHTML = '<ul>'
+    let assignmentHTML = '<ul id="activities">'
     
 
     for (const activity of activities) {

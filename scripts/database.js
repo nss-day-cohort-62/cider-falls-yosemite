@@ -125,17 +125,6 @@ const database = {
 }
 
 
-// export const getAreas = () => {
-//     return database.areas.map(area => ({...area}))
-// } 
-
-// export const getActivities = () => {
-//     return database.activities.map(activity => ({...activity}))
-// }
-// export const getAreaActivities = () => {
-//     return database.areaActivities.map(areaActivity => ({...areaActivity}))
-// }
-
 export const getAreas = () => {
     return database.areas.map(area => ({...area}))
 } 

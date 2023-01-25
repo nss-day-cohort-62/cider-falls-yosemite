@@ -1,0 +1,39 @@
+#activities {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    border: 1px solid red;
+}
+
+#grandparent {
+    display: flex;
+    justify-content: center;
+}
+
+#areas-section {
+    width: 640px;
+    border: 1px solid turquoise;
+    border-radius: 15px 0 0 15px;
+    padding: 25px;
+}
+
+.areas {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+#guest-list {
+    width: 320px;
+    border: 1px solid blue;
+    border-radius: 0 15px 15px 0;
+    padding: 25px;
+    /* float: right; */
+}
+
+#area--1, #area--2, #area--3, #area--4, #area--5, #area--6 {
+    height: 175px;
+    width: 175px;
+    border: 1px solid turquoise;
+    padding: 5px;
+}
